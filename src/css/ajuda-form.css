@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #fbf7dd;
+    
+}
+.width-max{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.width-max div:first-child span{
+    font-weight: bolder;
+    color: rgb(29, 29, 29);
+}
+
+header .width-max{
+    display: flex;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .width-max div {
+    display: flex;
+    
+}
+header .width-max div:last-of-type{
+    display: flex;
+    flex-direction:column;
+    
+      
+}
+header .width-max div:last-of-type div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header .width-max div:last-of-type p{
+    line-height: 25px;
+    font-size: 15px; 
+}
+header .logo{
+    width: 30px;
+    height: 33px;
+    margin-right: 3px;
+    animation: 10s infinite alternate-reverse rotacao;
+}
+header .icones{
+    width:25px;
+    margin-bottom: -5px;
+    margin-right: 4px;
+    opacity: 0.6;
+}
+header a,header p{
+    text-decoration: none;
+    color:#717170;
+    padding: 4px 10px; 
+    font-weight: 600;
+    
+    
+}
+header a{
+    transition:1s;
+    scale: 1.0;
+}
+header a:hover{
+    box-shadow: 3px 5px 5px 2px #5d15d168;
+    border: none;
+    border-radius: 5px;
+    transition: 3s;
+    scale: 1.05;
+}
+header .home:hover{
+    box-shadow: none;
+}
+@keyframes rotacao{
+    0%{transform: rotate(50deg);
+
+    }
+    100%{transform: rotate(-50deg);
+
+    }
+}
+main section{
+    background-image: url('../img/bahia.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0;
+}
+main section .width-max div:first-of-type{
+    width: 80%;
+    margin: 0 auto;
+    border-radius:20px 1px 0 0;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #4b12a8;
+    color: #fff;
+}
+main .width-max form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    background-color: #fff;
+    opacity: 0.9;
+    padding-bottom: 30px;
+    border-radius: 0 0 20px 1px;
+}
+section .width-max form input, label, select, textarea, button{
+    width: 80%;
+    margin: 0 auto;
+    color: #4d4c4c;
+}
+ section .width-max form  input, select, textarea{
+    margin-bottom:10px;
+    background-color: #5d15d168;
+    border: none;
+    border-radius: 4px;
+    padding: 3px;
+ }
+section .width-max form label{
+    margin-bottom:5px ;
+}
+section  form button{
+    margin: 20px auto;
+    padding: 4px 20px;
+    border-radius: 3px;
+    border: 1px solid #4d4c4c;
+    background-color: #5d15d1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+section  button:hover{
+    box-shadow:0  0 8px 3px #717170;
+}
+section form select option{
+    font-size: 18px;
+}
+footer{
+    background-color: #5d15d1;
+    color: #fff;
+   
+}
+footer .width-max {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding:20px;
+}
+footer  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+footer .width-max a:hover{
+    background-color: #fff;
+    color: #5d15d1;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+footer .width-max img{
+    width: 25px;
+    height: 25px;
+    margin:0px 8px 5px 0 ;
+}
+footer .width-max div div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.direitos{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #4b12a8;
+    padding: 5px 0;
+   padding-bottom: 20px;
+}
+.direitos p{
+    font-size: 16px;
+}
+.direitos img{
+    width: 28px;
+    margin: 0px 0px -10px 3px;
+    border-radius: 50%;
+}
+.direitos img:hover{
+    box-shadow: 0 0 10px 2px yellow;
+}
+.direitos span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+footer  .width-max h3{
+    color: #fff;
+    padding-bottom: 10px;
+}
+p, label{
+    font-size: 18px;
+
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="description" content="Agência de viagens, viaje com a melhor">
+    <meta name="robots" content="nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de viagens</title>
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="width-max">
+            <div>
+                <a class="home" title="Home" href="index.html"><img class="logo" src="src/img/local-logo.png" alt="imagem de um localizador"></a>
+                <h1>Agência de viagens</h1>
+            </div>
+            <div>
+                <p><img class="icones" src="src/img/kisspng-technical-support-computer-icons-help-desk-custome-support-5abfc2454ba4f4.9994862115225165493099.png">Central de atendimento/ Televendas:(62) 99999 - 9999</p>
+                <div>
+                    <a title="Clique aqui e veja nossa localicação e nossa historia" href="quem_somos.html"><img class="icones" src="src/img/kisspng-computer-icons-material-design-location-map-clip-a-5afa38de778383.6662681815263479984895.png" alt="">Quem somos/ Encontre-nos</a>
+                    <a title="Clique aqui e tire sua dúvidas" href="ajuda.html"><img class="icones" src="src/img/kisspng-question-mark-clip-art-symbol-computer-icons-5ce7ccd589f0d4.546107121558695125565.png" alt="">Precisa de ajuda?</a>
+                </div>    
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="width-max">
+                <div id="plano" class="titulo-form">
+                    <img class="plane-left" src="src/img/aviao.png" alt="imagem de um aviao em branco">
+                    <h2>Solicite um orçamento</h2>
+                </div>
+                <div class="form">
+                   <h2>Informe seus dados</h2>
+                    <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                        <div >
+                            <label for="">Nome</label>
+                            <input type="text" name="nome" placeholder="Nome completo" required>
+                            <label for="">Email</label>
+                            <input type="email" name="email" placeholder="E-mail para contato" required>
+                            <label for="">Celular</label>
+                            <input type="tel" name="celular" placeholder="(xx) xxxxx-xxxx" required >
+                        </div>
+                        <div>
+                            <div>
+                                <label for="">Data da ida </label>
+                                <input type="date" name="partida" required>
+                            </div>
+                            <div>    
+                                <label for="">Data da volta </label>
+                                <input type="date" name="chegada" required>
+                            </div>    
+                        </div>
+                        <div>
+                            <div>
+                                <label for="">Origem</label>
+                                <select name="origem" id="">
+                                    <option  value="">Partindo de</option>
+                                    <option value="Acre">Acre</option>
+                                    <option value="">Alagoas</option>
+                                    <option value="">Amapá</option>
+                                    <option value="">Amazonas</option>
+                                    <option value="">Bahia</option>
+                                    <option value="">Ceará</option>
+                                    <option value="">Distrito Federal</option>
+                                    <option value="">Espirito Santo</option>
+                                    <option value="">Goiás </option>
+                                    <option value="">Maranhão</option>
+                                    <option value="">Mato Grosso</option>
+                                    <option value="">Mato Grosso do sul</option>
+                                    <option value="">Minas Gerais</option>
+                                    <option value="">Pará</option>
+                                    <option value="">Paraíba</option>
+                                    <option value="">Paraná</option>
+                                    <option value="">Pernambuco</option>
+                                    <option value="">Piauí</option>
+                                    <option value="">Rio de Janeiro</option>
+                                    <option value="">Rio Grande do Norte</option>
+                                    <option value="">Rio Grande do Sul</option>
+                                    <option value="">Rondônia</option>
+                                    <option value="">Roraima</option>
+                                    <option value="">Santa Catarina</option>
+                                    <option value="">São paulo</option>
+                                    <option value="">Sergipe</option>
+                                    <option value="">Tocantins</option>
+                                </select>
+                            </div>
+                             <div>
+                                <label for="">Destino</label>
+                                <select name="destino" id="">
+                                    <option  value="">Indo para</option>
+                                    <option value="goias">Acre</option>
+                                    <option value="Alagoas">Alagoas</option>
+                                    <option value="">Amapá</option>
+                                    <option value="">Amazonas</option>
+                                    <option value="">Bahia</option>
+                                    <option value="">Ceará</option>
+                                    <option value="">Distrito Federal</option>
+                                    <option value="">Espirito Santo</option>
+                                    <option value="">Goiás </option>
+                                    <option value="">Maranhão</option>
+                                    <option value="">Mato Grosso</option>
+                                    <option value="">Mato Grosso do sul</option>
+                                    <option value="">Minas Gerais</option>
+                                    <option value="">Pará</option>
+                                    <option value="">Paraíba</option>
+                                    <option value="">Paraná</option>
+                                    <option value="">Pernambuco</option>
+                                    <option value="">Piauí</option>
+                                    <option value="">Rio de Janeiro</option>
+                                    <option value="">Rio Grande do Norte</option>
+                                    <option value="">Rio Grande do Sul</option>
+                                    <option value="">Rondônia</option>
+                                    <option value="">Roraima</option>
+                                    <option value="">Santa Catarina</option>
+                                    <option value="">São paulo</option>
+                                    <option value="">Sergipe</option>
+                                    <option value="">Tocantins</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div>
+                            <p>Quarto com cama infantil?<p>
+                            <input type="radio" name="infantil"  value="sim" id="cama-sim">
+                            <label for="cama-sim">Sim</label>
+                            <input type="radio" name="infantil" value="nao" id="cama-nao">
+                            <label for="cama-nao">Não</label>
+                        </div>
+                        <div>
+                            <p>Preferências de hospedagem</p>
+                            <input type="checkbox" name="preferencias[]" value="Piscina" id="hospedagem-piscina">
+                            <label for="hospedagem-piscina">Piscina</label>
+                            <input type="checkbox" name="preferencias[]" value="Wi-fi" id="hospedagem-Wi-fi">
+                            <label for="hospedagem-Wi-fi">Wi-fi</label>
+                            <input type="checkbox" name="preferencias[]" value="Garagem" id="hospedagem-garagem">
+                            <label for="hospedagem-garagem">Garagem</label>
+                            <input type="checkbox" name="preferencias[]"  value="suite" id="hospedagem-suite">
+                            <label for="hospedagem-suite">Suite</label>
+                        </div>
+                        <button type="submit">Solicite seu orçamento</button>
+                        <button type="reset">Limpar</button>
+                   </form> 
+                </div>
+            </div>
+        </section>
+        <section class=" oferta">
+            <div class="width-max">
+                <div>
+                    <h3>Ofertas</h3>
+                    <p>Com até <span>50%</span> de desconto</p>
+                </div>
+                <div class="galeria">
+                    <div class="card-1">
+                        <p>Rio de Janeiro</p>
+                        <div class="oferta-pacote">
+                            <p>Principais pontos turísticos</p>
+                            <ul type="none">
+                                <li>Cristo Redentor</li>
+                                <li>Pão de Açucar</li>
+                                <li>Escadaria Selarón</li>
+                                <li>Theatro Municipal do Rio de Janeiro </li>
+                            </ul>
+                            <a href="#plano">Conferir pacote</a>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div>
+                            <div class="manaus">
+                                <p>Manaus</p>
+                                <div class="oferta-pacote">
+                                    <p>Principais pontos turísticos</p>
+                                    <ul type="none">
+                                        <li>Teatro Amazonas</li>
+                                        <li>Palacio Rio Negro</li>
+                                        <li>Zoologico do Cigs</li>
+                                        <li>Praia da Ponta negra </li>
+                                    </ul>
+                                    <a href="#plano">Conferir pacote</a>
+                                </div>
+                            </div>
+                            <div class="sao-paulo">
+                                 <p>São Paulo</p>
+                                 <div class="oferta-pacote">
+                                    <p>Principais pontos turísticos</p>
+                                    <ul type="none">
+                                        <li>Parque Ibirabuera</li>
+                                        <li>Mercado Municipal de São Paulo</li>
+                                        <li>Jardim Botânico</li>
+                                        <li>Estadio do Morumbi </li>
+                                    </ul>
+                                    <a href="#plano">Conferir pacote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="rio-de-janeiro">
+                                <p>Rio de Janeiro</p>
+                                <div class="oferta-pacote">
+                                    <p>Principais pontos turísticos</p>
+                                    <ul type="none">
+                                        <li>AquaRio</li>
+                                        <li>Jarim Botânico</li>
+                                        <li>Arcos da Lapa</li>
+                                        <li>Parque Nac. da Tijuca</li>
+                                    </ul>
+                                    <a href="#plano">Conferir pacote</a>
+                                </div>
+                            </div>
+                            <div class="maranhao">
+                                <p>Maranhão</p>
+                                <div class="oferta-pacote">
+                                    <p>Principais pontos turísticos</p>
+                                    <ul type="none">
+                                        <li>Lençois Maranhenses</li>
+                                        <li>Parque Nac. Chapada das mesas</li>
+                                        <li>Barreirinhas</li>
+                                        <li>São luiz</li>
+                                    </ul>
+                                    <a href="#plano">Conferir pacote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="oferta" >
+            <div class="width-max">
+                <div>
+                    <h3>Explore a natureza</h3>
+                    <p>Venha conosco e veja o melhor que a natureza tem a oferecer.</p>
+                </div>
+                <div class="anuncio">
+                    <div>
+                        <img src="src/img/lencol.jpg" alt="Imagem dos Lencois Maranhenses">
+                        <div class="plano">
+                            <p> <span> Lençois Maranhenses, Brasil </span></p>
+                            <p>Ida e volta a partir de R$ 79,00.</p>
+                            <div class="pacote">
+                               <p>Incluso:</p>
+                                <ul> 
+                                    <li>Ida e volta aereo.</li>
+                                    <li>Café da manha</li>
+                                    <li>Almoço</li>
+                                    <li>Hotel</li>
+                                    <li>2 dias de viagem(disponível de segunda a sexta.)</li> 
+                               </ul>
+                               <a href="#plano">Conferir pacote</a>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="src/img/goias.jpg" alt="Imagem da Cachoeira Santa Bárbara">
+                        <div class="plano" >
+                            <p> <span> Cachoeira Santa Bárbara, Brasil</span></p>
+                            <p>Ida e volta a partir de R$ 139,00.</p>
+                             <div class="pacote">
+                                <p>Incluso:</p>
+                                <ul> 
+                                     <li>Ida e volta aereo.</li>
+                                     <li>Café da manha</li>
+                                     <li>Almoço</li>
+                                     <li>Hotel</li>
+                                     <li>2 dias de viagem(disponível de segunda a sexta.)</li> 
+                                </ul> 
+                                <a href="#plano">Conferir pacote</a>                               
+                             </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="width-max">
+                <div>
+                    <h3>Destinos</h3>
+                    <p>Venha conosco e conheça todos os destinos disponíveis, viva o seu sonho de 
+                        viajar do melhor jeito possível com a Agência de viagens. </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="width-max">
+                <div>
+                    <h3>Cruzeiros</h3>
+                    <p></p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="width-max" >
+            <div>   
+                <h3>Contato</h3>
+                <div>
+                    <img src="src/img/local.png" alt="icone de um localizador">
+                    <p>Rio de Janeiro, RJ</p>
+                </div>
+                <div>
+                    <img src="src/img/telefone.png" alt="icone de um telefone">
+                    <p>Telefone: (21) 99999-9999</p>
+                </div>     
+                <div>
+                    <img src="src/img/email.png" alt="icone de uma carta">
+                    <p>Email: contato@agencia.com.br</p>
+                </div>    
+            </div>
+            <div>
+                <h3>Nossas redes sociais</h3>
+                <div>   
+                    <img src="src/img/fb.png" alt="logo do facebook">
+                    <a href="https://www.facebook.com/">/AgenciaDeViagem</a>
+                </div>    
+                <div>    
+                    <img src="src/img/ig.png" alt="logo do instagran">
+                    <a href="https://www.instagram.com/">@AgenciaDeViagem</a>
+                </div>    
+                <div>    
+                    <img src="src/img/tt.png" alt="logo do twiter">
+                    <a href="https://www.twitter.com/">@AgenciaDeViagem</a>
+                </div>    
+            </div>
+        </div>
+        <div class="direitos">
+            <p> &copy;Agencia de viagens - todos os direitos reservados </p>
+            <p>Desenvolvido por <span>Danilo teles</span><a target="_blank" href="https://github.com/Danilo-TTeles"><img src="src/img/github.png" alt="logomarca do github"></a>
+             <a target="_blank" href="https://www.linkedin.com/in/danilo-tteles"><img src="src/img/linkedin (1).png" alt="logomarca do linkedin"></a></p>
+        </div>
+    </footer>
+</body>
+</html>

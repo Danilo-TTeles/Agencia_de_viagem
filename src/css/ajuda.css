@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #fbf7dd;
+}
+.width-max{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.width-max h3{
+    font-size: 25px;
+    margin: 25px 0 10px;
+}
+
+header .width-max{
+    display: flex;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .width-max div {
+    display: flex;
+    
+}
+header .width-max div:last-of-type{
+    display: flex;
+    flex-direction:column;
+    
+      
+}
+header .width-max div:last-of-type div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header .width-max div:last-of-type p{
+    line-height: 25px;
+    font-size: 15px; 
+}
+header .logo{
+    width: 30px;
+    height: 33px;
+    margin-right: 3px;
+    animation: 10s infinite alternate-reverse rotacao;
+}
+header .icones{
+    width:25px;
+    margin-bottom: -5px;
+    margin-right: 4px;
+    opacity: 0.6;
+}
+header a,header p{
+    text-decoration: none;
+    color:#717170;
+    padding: 4px 10px; 
+    font-weight: 600; 
+}
+header a{
+    transition:1s;
+    scale: 1.0;
+}
+
+header a:hover{
+    box-shadow: 3px 5px 5px 2px #5d15d168;
+    border: none;
+    border-radius: 5px;
+    transition: 3s;
+    scale: 1.05;
+}
+header .home:hover{
+    box-shadow: none;
+}
+@keyframes rotacao{
+    0%{transform: rotate(50deg);
+
+    }
+    100%{transform: rotate(-50deg);
+
+    }
+}
+.banner{
+    background-image: url('../img/bahia.jpg');
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.banner div{
+    display: flex;
+    color: #fff;
+    font-size:30px;
+    justify-content: center;
+    align-items: center ;
+    height: 80px;
+    width: 700px;
+    background-color: #5c13d263;
+    border-radius: 10px;
+
+}
+.artigos-populares, .ajuda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+
+.artigos-populares .card-1, .artigos-populares .card-2, .artigos-populares .card-3, .artigos-populares .card-4,  .ajuda .card{
+    border: 1px solid #8e8e8e;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 5px 3px #717170 ;
+    max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 10px ;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.artigos-populares .card-1 a, .artigos-populares .card-2 a, .artigos-populares .card-3 a, .artigos-populares .card-4 a{
+    text-decoration: none;
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.artigos-populares .artigo-resposta{
+    display: none;
+    background-color: #fff;
+    animation:1s normal linear opacidade;
+    color: #717170;
+    font-size: 17px;
+}
+@keyframes opacidade {
+    0%{opacity: 0.2;
+
+    }
+    100%{opacity: 0.9;
+
+    }
+}
+.artigos-populares .card-1, .artigos-populares .card-2, .artigos-populares .card-3, .artigos-populares .card-4{
+    position: relative;
+    
+}
+.artigos-populares .card-1:hover, .artigos-populares .card-2:hover, .artigos-populares .card-3:hover, .artigos-populares .card-4:hover{
+    
+    .artigo-resposta{
+        display: block;
+        position: absolute;
+        top:105px;
+        left:0px;
+        box-shadow: 0 0 5px 5px #4d4c4c;
+        background-color: #fff;
+        max-width: 250px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px 10px ;
+
+        
+
+    }
+    
+}
+.artigos-populares .card-titulo{ 
+    font-weight: 600;
+    color: #717170;
+}
+.limite-perguntas{
+    border-bottom: 1px solid #8e8e8e;
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    height: 200px;
+   
+}
+.limite-perguntas .tema{
+    width: 50%;
+}
+.limite-perguntas .perguntas{
+    width: 50%;
+    overflow-y: auto;
+    color: #717170;
+    padding: 10px; 
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+.limite-perguntas h3{
+    font-weight: 600;
+    font-size: 23px;
+}
+.perguntas .per{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.perguntas .res{
+    margin-bottom: 20px;
+    
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.perguntas:hover{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px #4d4c4c;
+}
+section{
+    padding: 50px 0;
+}
+
+section:nth-child(2) h2, section:last-of-type h3{
+ margin: 10px auto 30px;
+ font-size: 25px;
+ text-align: center;
+ background-color: #5c13d263;
+ color: #fff;
+ width: 70%;
+ padding: 5px;
+ border-radius: 10px;
+ text-shadow: 0 5px 5px  black;
+ 
+}
+.ajuda{
+    padding: 20px 0 50px ;
+}
+.card p{
+    color: #717170;
+    line-height: 25px;
+    font-size: 17px;
+    text-align: center;
+    
+}
+.ajuda .card  p span{
+    color: #5d15d1;
+    font-size:20px;
+    font-weight: bolder;
+    margin-left: 30px;
+
+}
+.ajuda a{
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #5d15d1;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 18px;
+}
+.ajuda .card h4{
+    font-size: 18px;
+    text-align: center;
+}
+footer{
+    background-color: #5d15d1;
+    color: #fff; 
+}
+footer .width-max {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding:20px;
+}
+footer  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+footer .width-max a:hover{
+    background-color: #fff;
+    color: #5d15d1;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+footer .width-max img{
+    width: 25px;
+    height: 25px;
+    margin:0px 8px 5px 0 ;
+}
+footer .width-max div div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.direitos{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #4b12a8;
+    padding: 5px 0;
+   padding-bottom: 20px;
+}
+.direitos p{
+    font-size: 16px;
+}
+.direitos img{
+    width: 28px;
+    margin: 0px 0px -10px 3px;
+    border-radius: 50%;
+}
+.direitos img:hover{
+    box-shadow: 0 0 10px 2px yellow;
+}
+.direitos span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+footer  .width-max h3{
+    color: #fff;
+    padding-bottom: 10px;
+}
+p, label{
+    font-size: 18px;
+
+}

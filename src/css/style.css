@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #fbf7dd;
+}
+.width-max{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.width-max h3{
+    font-size: 25px;
+    margin: 25px 0 10px;
+}
+.oferta p{
+    margin: 10px 0;
+    color: #4d4c4c;
+}
+.width-max div:first-child span{
+    font-weight: bolder;
+    color: rgb(29, 29, 29);
+}
+
+header .width-max{
+    display: flex;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .width-max div {
+    display: flex;
+    
+}
+header .width-max div:last-of-type{
+    display: flex;
+    flex-direction:column;
+    
+      
+}
+header .width-max div:last-of-type div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header .width-max div:last-of-type p{
+    line-height: 25px;
+    font-size: 15px; 
+}
+header .logo{
+    width: 30px;
+    height: 33px;
+    margin-right: 3px;
+    animation: 10s infinite alternate-reverse rotacao;
+}
+header .icones{
+    width:25px;
+    margin-bottom: -5px;
+    margin-right: 4px;
+    opacity: 0.6;
+}
+header a,header p{
+    text-decoration: none;
+    color:#717170;
+    padding: 4px 10px; 
+    font-weight: 600;
+    
+    
+}
+header a{
+    transition:1s;
+    scale: 1.0;
+}
+header a:hover{
+    box-shadow: 3px 5px 5px 2px #5d15d168;
+    border: none;
+    border-radius: 5px;
+    transition: 3s;
+    scale: 1.05;
+}
+header .home:hover{
+    box-shadow: none;
+}
+@keyframes rotacao{
+    0%{transform: rotate(50deg);
+
+    }
+    100%{transform: rotate(-50deg);
+
+    }
+}
+.banner{
+    background-image: url('../img/bahia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    
+}
+.banner img{
+    width: 30px;
+}
+.banner .plane-left{
+    animation: 120s infinite    aviao;
+}
+@keyframes aviao{
+    0%{transform:translate(0) ;
+}   
+    100% {transform: translate(980px);
+}
+}
+.banner .width-max{
+    padding: 80px 0;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.titulo-form{
+    display: flex;
+    flex-direction: row;
+    background-color: #5d15d1;
+   font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px 1px 0 0;
+} 
+.titulo-form h2{
+    padding-top: 3px;
+    margin-left: 100;
+    margin-left:38% ;
+    background-color: #fff;
+    color: #5d15d1;
+    z-index: 1;
+    padding: 4px 10px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.form{
+    background-color: aliceblue;
+    border-radius: 0 0 20px 1px;
+}
+form{
+    width: 98%;
+    margin: 10px auto;
+}
+.form h2{
+    margin:0 10px;
+    padding-top: 20px;
+}
+form div:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+form div:nth-of-type(2){
+   display: flex;
+   justify-content: space-between; 
+}
+form div:nth-of-type(2) div{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+form div:nth-of-type(3){
+    display: flex;
+    justify-content: space-between; 
+ }
+ form div:nth-of-type(3) div{
+     display: flex;
+     flex-direction: column;
+     width: 49%;
+ }
+ select{
+    width: 100%;
+ }
+ option{
+    font-size: 16px;
+ }
+ input, select{
+    padding: 5px;
+    background-color: #5d15d135;
+    border: none;
+    border-radius: 5px;
+}
+ label, form p{
+    margin: 10px 40px 5px 0;
+ }
+ button{
+    margin: 20px 0;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5d15d1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+ }
+ .galeria{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+ }
+.card-1, .card-2{
+    width: 49%;
+    height: 400px;
+}
+.card-1{
+    background-image: url('../img/rio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 3px;
+    position: relative;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-2 div div{
+    display: flex;
+    align-items: flex-end;
+}
+.card-1 p, .card-2 p{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 30px;
+    padding: 5px 5px;
+    color: #d6d6d5;
+}
+.manaus, .sao-paulo, .rio-de-janeiro, .maranhao  {
+    width: 49%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+   position: relative;
+}
+.manaus{
+    background-image: url('../img/manaus.jpg');
+}
+.sao-paulo{
+    background-image: url('../img/saopaulo.jpg');
+}
+.rio-de-janeiro{
+    background-image: url('../img/niteroi.jpg');
+}
+.maranhao{
+    background-image: url('../img/maranhao.jpg');
+    
+}
+.manaus .oferta-pacote, .sao-paulo .oferta-pacote, .rio-de-janeiro .oferta-pacote, .maranhao .oferta-pacote, .card-1 .oferta-pacote{
+    background-color: #fff;
+    color: #8e8e8e;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    line-height: 28px;
+    box-shadow: inset 0px 0px 5px 5px #717170 ;
+    border-radius: 5px;
+    animation:1s normal linear opacidade;
+    
+}
+@keyframes opacidade {
+    0%{opacity: 0.2;
+
+    }
+    100%{opacity: 0.9;
+
+    }
+}
+.oferta{
+    padding-bottom: 30px;
+}
+.oferta-pacote ul, .oferta .pacote ul{
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.oferta-pacote p{
+    font-weight: bold;
+    color: #4d4c4c;
+}
+.oferta .width-max a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #5d15d1;
+    padding: 5px 10px;
+    margin: 10px 50px ;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: 1s alternate-reverse infinite sombra;
+    border: none;
+} 
+@keyframes sombra{
+    from{box-shadow:0 0 5px 1px #4d4c4c;
+
+    }
+    to{box-shadow: 0 0 5px 5px #4d4c4c;
+
+    }
+}
+.oferta .pacote a{
+    margin-left: 150px;
+    
+}
+.oferta-pacote, .oferta .pacote{
+    padding-bottom:15px;
+}
+.oferta .width-max a:hover, button:hover{
+    box-shadow: 0 0 5px 2px #4d4c4c;
+
+}
+
+.manaus:hover, .sao-paulo:hover, .rio-de-janeiro:hover, .maranhao:hover {
+    box-shadow: 0 0 5px 5px #4d4c4c;
+    .oferta-pacote{
+        display: block;
+        position: absolute;
+        top: 180px;
+        left: 0;
+        z-index: 1;
+        
+    }
+}
+.card-1:hover{
+    box-shadow: 0 0 5px 5px #4d4c4c;
+    .oferta-pacote{
+        display: block;
+        position: absolute;
+        top: 390px;
+        left: 0;
+        text-align: center;
+        
+        
+    }
+}
+.anuncio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.anuncio div{
+    width: 49%;
+}
+.anuncio img{
+    width: 100%;
+    border-radius: 3px;
+}
+.anuncio div div{
+    background-color: #fff;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px  10px 5px;
+    line-height: 28px;
+    box-shadow: inset 0px 0px 5px 5px #adadab ;
+    border-radius: 5px;
+}
+.anuncio div div p:last-of-type{
+    color: #8e8e8e;
+}
+.anuncio span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.pacote ul{
+    color: #8e8e8e;
+    font-size: 17px;
+     margin-left: 15px;
+}
+.plano{
+    position: relative;
+}
+.plano .pacote{
+    display: none;
+    box-shadow: inset 0px 0px 5px 3px #717170;
+    animation:1s normal linear opacidade;
+    
+}
+.plano:hover{
+    box-shadow: 0 0 5px 5px #4d4c4c;
+    .pacote{
+        display: block;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        border-top:none ;
+}
+}   
+footer{
+    background-color: #5d15d1;
+    color: #fff;
+   
+}
+footer .width-max {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding:20px;
+}
+footer  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+footer .width-max a:hover{
+    background-color: #fff;
+    color: #5d15d1;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+footer .width-max img{
+    width: 25px;
+    height: 25px;
+    margin:0px 8px 5px 0 ;
+}
+footer .width-max div div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.direitos{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #4b12a8;
+    padding: 5px 0;
+   padding-bottom: 20px;
+}
+.direitos p{
+    font-size: 16px;
+}
+.direitos img{
+    width: 28px;
+    margin: 0px 0px -10px 3px;
+    border-radius: 50%;
+}
+.direitos img:hover{
+    box-shadow: 0 0 10px 2px yellow;
+}
+.direitos span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+footer  .width-max h3{
+    color: #fff;
+    padding-bottom: 10px;
+}
+p, label{
+    font-size: 18px;
+
+}
