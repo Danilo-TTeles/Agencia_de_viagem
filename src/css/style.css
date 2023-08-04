@@ -5,14 +5,11 @@
 }
 main{
     background-color: #fbf7dd;
+    padding-bottom: 30px;
 }
 .width-max{
     max-width: 1024px;
     margin: 0 auto;
-}
-.width-max h3{
-    font-size: 25px;
-    margin: 25px 0 10px;
 }
 .oferta p{
     margin: 10px 0;
@@ -114,7 +111,10 @@ header .home:hover{
     opacity: 0.9;
     border-radius: 5px;
 }
-.titulo-form{
+ main p{
+    color: #4d4c4c;
+ }
+ .titulo-form{
     display: flex;
     flex-direction: row;
     background-color: #5d15d1;
@@ -193,6 +193,17 @@ form div:nth-of-type(3){
     font-weight: bold;
     font-size: 15px;
  }
+ section .width-max h3{
+    margin: 20px auto 30px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #5c13d263;
+    color: #fff;
+    width: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 0 5px 5px  black;
+ }
  .galeria{
     display: flex;
     justify-content: space-between;
@@ -225,7 +236,7 @@ form div:nth-of-type(3){
     display: flex;
     align-items: flex-end;
 }
-.card-1 p, .card-2 p{
+.card-1 p, .card-2 p, .cruzeiro_galeria .card_2 p, .cruzeiro_galeria_2 .card_1 p{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.322);
     width: 100%;
@@ -290,7 +301,7 @@ form div:nth-of-type(3){
     font-weight: bold;
     color: #4d4c4c;
 }
-.oferta .width-max a{
+.oferta .width-max a, .card-destino a{
     text-decoration: none;
     margin: 0 auto;
     color: #fff;
@@ -357,7 +368,7 @@ form div:nth-of-type(3){
     width: 100%;
     border-radius: 3px;
 }
-.anuncio div div{
+.anuncio div div, .card-destino div:last-of-type{
     background-color: #fff;
     margin-top: 10px;
     width: 100%;
@@ -366,10 +377,10 @@ form div:nth-of-type(3){
     box-shadow: inset 0px 0px 5px 5px #adadab ;
     border-radius: 5px;
 }
-.anuncio div div p:last-of-type{
+.anuncio div div p:last-of-type, .card-destino div:last-of-type p:last-of-type{
     color: #8e8e8e;
 }
-.anuncio span{
+.anuncio span, .card-destino div:last-of-type span{
     font-weight: bold;
     font-size: 19px;
 }
@@ -378,16 +389,18 @@ form div:nth-of-type(3){
     font-size: 17px;
      margin-left: 15px;
 }
-.plano{
+.plano, .card-destino {
     position: relative;
+    
+    
 }
-.plano .pacote{
+.plano .pacote, .card-destino .pacote{
     display: none;
     box-shadow: inset 0px 0px 5px 3px #717170;
     animation:1s normal linear opacidade;
     
 }
-.plano:hover{
+.plano:hover, .card-destino div:hover{
     box-shadow: 0 0 5px 5px #4d4c4c;
     .pacote{
         display: block;
@@ -395,8 +408,80 @@ form div:nth-of-type(3){
         top: 90px;
         left: 0px;
         border-top:none ;
+        z-index: 1;
+        
 }
-}   
+} 
+.card-destino div:hover{
+    box-shadow: none;
+} 
+
+.destinos-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    
+    
+    
+    
+    
+   
+    
+} 
+.destinos-galeria .card-destino div{
+    margin: 15px;
+    text-align: center;
+    width: 300px;
+    
+    
+}
+.card-destino img{
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow:5px 5px 10px 5px  #4d4c4c;
+}
+.cruzeiro_galeria, .cruzeiro_galeria_2{
+    display:flex;
+    justify-content: space-between;
+    height: 500px;
+    margin: 20px 5px;
+    position: relative;
+   
+
+}
+.cruzeiro_galeria .card_1, .cruzeiro_galeria_2 .card_2 {
+    width: 30%;
+    
+}
+.cruzeiro_galeria .card_2 .wonder{
+    background-image: url('../img/cruzeiros/wonder.jpg');
+}
+.cruzeiro_galeria_2 .card_1{
+    background-image: url('../img/cruzeiros/majestic.jpg');
+}
+
+.cruzeiro_galeria .card_2 .wonder, .cruzeiro_galeria_2 .card_1{
+    
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 700px;
+    height: 500px;
+    border: 1px solid #717170;
+    border-radius: 30px 1px;
+    box-shadow:5px 5px 10px 5px  #4d4c4c
+}
+.cruzeiro_galeria .card_2 p, .cruzeiro_galeria_2 .card_1 p{
+    border-radius: 30px 1px 0px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
 footer{
     background-color: #5d15d1;
     color: #fff;

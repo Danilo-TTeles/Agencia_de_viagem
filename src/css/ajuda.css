@@ -260,6 +260,15 @@ section:nth-child(2) h2, section:last-of-type h3{
     font-size: 18px;
     text-align: center;
 }
+.ajuda .card img{
+    width: 40px;
+    margin-top: -8px;
+}
+.ajuda .card div:first-of-type{
+    display:flex;
+    margin-bottom: 5px;
+    
+} 
 footer{
     background-color: #5d15d1;
     color: #fff; 
