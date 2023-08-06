@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #eaeaea;
-}
 
 .width-max{
     max-width: 1024px;
@@ -15,10 +12,18 @@ body{
     font-size: 25px;
     margin: 25px 0 10px;
 }
-
+header{
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #8e8e8e, #fff, #8e8e8e);
+}
+header h1{
+    font-family: 'ubuntu', sans-serif;
+    font-size: 40px;
+    
+}
 header .width-max{
     display: flex;
-    margin: 15px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -51,11 +56,11 @@ header .icones{
     width:25px;
     margin-bottom: -5px;
     margin-right: 4px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 header a,header p{
     text-decoration: none;
-    color:#717170;
+    color:#4d4c4c;
     padding: 4px 10px; 
     font-weight: 600; 
 }
@@ -64,10 +69,10 @@ header a{
     scale: 1.0;
 }
 header a:hover{
-    box-shadow: 3px 5px 5px 2px #5d15d168;
+    box-shadow: 3px 5px 5px 2px #4b12a8;
     border: none;
     border-radius: 5px;
-    transition: 3s;
+    transition: 2s;
     scale: 1.05;
 }
 header .home:hover{
@@ -83,11 +88,13 @@ header .home:hover{
 }
 main{
     background-color: #fbf7dd;
-    padding: 40px 0;
+    padding: 40px 0 10px;
 }
  main .width-max h2, .icones-nav a{
     font-size: 30px;
     text-decoration: none;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
 }
 main .width-max p {
     color: #717170;
@@ -127,6 +134,8 @@ section .width-max h3 ,.width-max h2{
  padding: 5px;
  border-radius: 10px;
  text-shadow: 0 5px 5px  black;
+ font-family: 'ubuntu', sans-serif;
+ font-weight: 500;
 }
 section .linha-tempo .subtitulo{
     color: #5d15d1;
@@ -154,7 +163,8 @@ section .localizacao a,section .localizacao  span{
 section .localizacao  div iframe{
     width:500px;
     border-radius: 50px;
-    box-shadow:5px 10px 5px #717170;
+    
+    box-shadow:5px 10px 5px #4d4c4c;
 }
 section .localizacao div:last-of-type{
     margin: 20px auto 40px;
@@ -211,6 +221,8 @@ section .news form button{
     color: #fff;
     font-weight: bold;
     font-size: 15px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
 }
 section .news button:hover{
     box-shadow:0  0 8px 3px #717170;
@@ -228,6 +240,12 @@ footer .width-max {
    flex-direction: row;
    justify-content: space-between;
    padding:20px;
+}
+footer h3{
+    font-size: 25px;
+    margin: 25px 0 10px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
 }
 footer  a{
     text-decoration: none;
@@ -279,9 +297,11 @@ footer  .width-max h3{
     color: #fff;
     padding-bottom: 10px;
 }
-p{
+p, label{
     font-size: 18px;
-    
-    
+    font-family: 'Roboto Condensed', sans-serif;
 
+}
+a{
+    font-family: 'Roboto Condensed', sans-serif; 
 }

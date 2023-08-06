@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de viagens</title>
     <link rel="stylesheet" href="src/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,12 +39,13 @@
                 </div>
                 <div class="form">
                    <h2>Informe seus dados</h2>
-                    <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                   <p><small> Para orçamento do cruzeiro <a href="#form_cruz">clique aqui</a></small></p>
+                   <form method="post" action="https://formsubmit.co/danilo.abilitygo@gmail.com">
                         <div >
                             <label for="">Nome</label>
                             <input type="text" name="nome" placeholder="Nome completo" required>
                             <label for="">Email</label>
-                            <input type="email" name="email" placeholder="E-mail para contato" required>
+                            <input type="email" name="email" _replyto  placeholder="@mail.com" required>
                             <label for="">Celular</label>
                             <input type="tel" name="celular" placeholder="(xx) xxxxx-xxxx" required >
                         </div>
@@ -55,92 +62,98 @@
                         <div>
                             <div>
                                 <label for="">Origem</label>
-                                <select name="origem" id="">
-                                    <option  value="">Partindo de</option>
+                                <select name="origem" id="" required>
+                                    <option value="">Partindo de</option>
                                     <option value="Acre">Acre</option>
-                                    <option value="">Alagoas</option>
-                                    <option value="">Amapá</option>
-                                    <option value="">Amazonas</option>
-                                    <option value="">Bahia</option>
-                                    <option value="">Ceará</option>
-                                    <option value="">Distrito Federal</option>
-                                    <option value="">Espirito Santo</option>
-                                    <option value="">Goiás </option>
-                                    <option value="">Maranhão</option>
-                                    <option value="">Mato Grosso</option>
-                                    <option value="">Mato Grosso do sul</option>
-                                    <option value="">Minas Gerais</option>
-                                    <option value="">Pará</option>
-                                    <option value="">Paraíba</option>
-                                    <option value="">Paraná</option>
-                                    <option value="">Pernambuco</option>
-                                    <option value="">Piauí</option>
-                                    <option value="">Rio de Janeiro</option>
-                                    <option value="">Rio Grande do Norte</option>
-                                    <option value="">Rio Grande do Sul</option>
-                                    <option value="">Rondônia</option>
-                                    <option value="">Roraima</option>
-                                    <option value="">Santa Catarina</option>
-                                    <option value="">São paulo</option>
-                                    <option value="">Sergipe</option>
-                                    <option value="">Tocantins</option>
+                                    <option value="Alagoas">Alagoas</option>
+                                    <option value="Amapa">Amapá</option>
+                                    <option value="Amazonas">Amazonas</option>
+                                    <option value="Bahia">Bahia</option>
+                                    <option value="Ceara">Ceará</option>
+                                    <option value="Distrito federal">Distrito Federal</option>
+                                    <option value="Espirito_santo">Espírito Santo</option>
+                                    <option value="Goias">Goiás </option>
+                                    <option value="Maranhao">Maranhão</option>
+                                    <option value="Mato grosso">Mato Grosso</option>
+                                    <option value="Mato_Grosso_do_sul">Mato Grosso do sul</option>
+                                    <option value="Minas_Gerais">Minas Gerais</option>
+                                    <option value="Para">Pará</option>
+                                    <option value="Paraiba">Paraíba</option>
+                                    <option value="Parana">Paraná</option>
+                                    <option value="Pernambuco">Pernambuco</option>
+                                    <option value="Piaui">Piauí</option>
+                                    <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+                                    <option value="Rio_Grnade_do_Norte">Rio Grande do Norte</option>
+                                    <option value="Rio_Grnade_do_Sul">Rio Grande do Sul</option>
+                                    <option value="Rondonia">Rondônia</option>
+                                    <option value="Roraima">Roraima</option>
+                                    <option value="Santa_Catarina">Santa Catarina</option>
+                                    <option value="Sao_Paulo">São paulo</option>
+                                    <option value="Sergipe">Sergipe</option>
+                                    <option value="Tocantins">Tocantins</option>
                                 </select>
                             </div>
                              <div>
                                 <label for="">Destino</label>
-                                <select name="destino" id="">
+                                <select name="destino" id="" required>
                                     <option  value="">Indo para</option>
-                                    <option value="goias">Acre</option>
+                                    <option value="Acre">Acre</option>
                                     <option value="Alagoas">Alagoas</option>
-                                    <option value="">Amapá</option>
-                                    <option value="">Amazonas</option>
-                                    <option value="">Bahia</option>
-                                    <option value="">Ceará</option>
-                                    <option value="">Distrito Federal</option>
-                                    <option value="">Espirito Santo</option>
-                                    <option value="">Goiás </option>
-                                    <option value="">Maranhão</option>
-                                    <option value="">Mato Grosso</option>
-                                    <option value="">Mato Grosso do sul</option>
-                                    <option value="">Minas Gerais</option>
-                                    <option value="">Pará</option>
-                                    <option value="">Paraíba</option>
-                                    <option value="">Paraná</option>
-                                    <option value="">Pernambuco</option>
-                                    <option value="">Piauí</option>
-                                    <option value="">Rio de Janeiro</option>
-                                    <option value="">Rio Grande do Norte</option>
-                                    <option value="">Rio Grande do Sul</option>
-                                    <option value="">Rondônia</option>
-                                    <option value="">Roraima</option>
-                                    <option value="">Santa Catarina</option>
-                                    <option value="">São paulo</option>
-                                    <option value="">Sergipe</option>
-                                    <option value="">Tocantins</option>
+                                    <option value="Amapa">Amapá</option>
+                                    <option value="Amazonas">Amazonas</option>
+                                    <option value="Bahia">Bahia</option>
+                                    <option value="Ceara">Ceará</option>
+                                    <option value="Distrito_federal">Distrito Federal</option>
+                                    <option value="Espirito_santo">Espirito Santo</option>
+                                    <option value="Goias">Goiás </option>
+                                    <option value="Maranhao">Maranhão</option>
+                                    <option value="Mato_grosso">Mato Grosso</option>
+                                    <option value="Mato_Grosso_do_sul">Mato Grosso do sul</option>
+                                    <option value="Minas_Gerais">Minas Gerais</option>
+                                    <option value="Para">Pará</option>
+                                    <option value="Paraiba">Paraíba</option>
+                                    <option value="Parana">Paraná</option>
+                                    <option value="Pernambuco">Pernambuco</option>
+                                    <option value="Piaui">Piauí</option>
+                                    <option value="Rio-de-janeiro">Rio de Janeiro</option>
+                                    <option value="Rio_Grnade_do_Norte">Rio Grande do Norte</option>
+                                    <option value="Rio_grande-sul">Rio Grande do Sul</option>
+                                    <option value="Rondonia">Rondônia</option>
+                                    <option value="Roraima">Roraima</option>
+                                    <option value="Santa_Catarina">Santa Catarina</option>
+                                    <option value="Sao_Paulo">São paulo</option>
+                                    <option value="Sergipe">Sergipe</option>
+                                    <option value="Tocantins">Tocantins</option>
                                 </select>
                             </div> 
                         </div>
                         <div>
                             <p>Quarto com cama infantil?<p>
-                            <input type="radio" name="infantil"  value="sim" id="cama-sim">
-                            <label for="cama-sim">Sim</label>
-                            <input type="radio" name="infantil" value="nao" id="cama-nao">
-                            <label for="cama-nao">Não</label>
+                            
+                            
+                                <input type="radio" name="cama infantil?"  value="sim" id="cama_sim">
+                                <label for="cama_sim">Sim</label>
+                                <input type="radio" name="cama infantil?" value="nao" id="cama_nao">
+                                <label for="cama_nao">Não</label>
+                           
                         </div>
                         <div>
-                            <p>Preferências de hospedagem</p>
-                            <input type="checkbox" name="preferencias[]" value="Piscina" id="hospedagem-piscina">
-                            <label for="hospedagem-piscina">Piscina</label>
-                            <input type="checkbox" name="preferencias[]" value="Wi-fi" id="hospedagem-Wi-fi">
-                            <label for="hospedagem-Wi-fi">Wi-fi</label>
-                            <input type="checkbox" name="preferencias[]" value="Garagem" id="hospedagem-garagem">
-                            <label for="hospedagem-garagem">Garagem</label>
-                            <input type="checkbox" name="preferencias[]"  value="suite" id="hospedagem-suite">
-                            <label for="hospedagem-suite">Suite</label>
+                            <p>Preferências de hospedagem:</p>
+                            
+                                 <input type="checkbox" name="preferencias " value="Piscina" id="hospedagem-piscina">
+                                <label for="hospedagem-piscina">Piscina</label>
+                                <input type="checkbox" name="preferencias"  value="Wi-fi" id="hospedagem-Wi-fi">
+                                <label for="hospedagem-Wi-fi">Wi-fi</label>
+                                <input type="checkbox" name="preferencias"  value="Garagem" id="hospedagem-garagem">
+                                 <label for="hospedagem-garagem">Garagem</label>
+                                <input type="checkbox" name="preferencias" value="suite" id="hospedagem-suite">
+                                <label for="hospedagem-suite">Suite</label>
+                            
                         </div>
                         <button type="submit">Solicite seu orçamento</button>
                         <button type="reset">Limpar</button>
-                   </form> 
+                        <input type="hidden" name="_next" value="https://http://127.0.0.1:5500//obg.html">
+                    </form> 
                 </div>
             </div>
         </section>
@@ -148,7 +161,7 @@
             <div class="width-max">
                 <div>
                     <h3>Ofertas</h3>
-                    <p>Com até <span>50%</span> de desconto</p>
+                    <p class="paragrafo">Aproveite nossas ofertas com até <span>50%</span> de desconto, e realize a sua viagem dos sonhos.</p>
                 </div>
                 <div class="galeria">
                     <div class="card-1">
@@ -229,7 +242,7 @@
             <div class="width-max">
                 <div>
                     <h3>Explore a natureza</h3>
-                    <p>Venha conosco e veja o melhor que a natureza tem a oferecer.</p>
+                    <p class="paragrafo">Venha conosco e aproveite o melhor que a natureza  tem para te oferecer , viaje com toda tranquilidade e segurança da Agência de viagens.</p>
                 </div>
                 <div class="anuncio">
                     <div>
@@ -276,7 +289,7 @@
             <div class="width-max">
                 <div>
                     <h3>Destinos</h3>
-                    <p>Venha conosco e conheça todos os destinos disponíveis, viva o seu sonho de 
+                    <p class="paragrafo">Conheça agora todos os destinos disponíveis, e viva o seu sonho de 
                         viajar do melhor jeito possível com a Agência de viagens. </p>
                 </div>
                 <div class="destinos-galeria">
@@ -812,8 +825,32 @@
                 <div class="cruzeiro_galeria">
                     <div class="card_1">
                        
-                        <p>Temos varios ofertas imperdiveis de cruzeiros, pacotes disponiveis com 3 ou 4 noites,sendo eles o pacote Economico, o Executivo e o All Incluse. 
-                            Solicite o orçamento e escolha o melhor para você.</p>
+                        <p>Temos varios ofertas imperdiveis de cruzeiros, pacotes disponiveis com 3 ou 4 noites,temos o pacote Economico, o Executivo e o All Incluse, conheça um pouco das vantagens abaixo.</p> 
+                        <div>
+                            <p>Standard</p>
+                            <ul>
+                                <li>3 noites</li>
+                                <li>Almoço e jantar</li>
+                                <li>Acesso a área da Piscina</li>
+                            </ul>
+                            <p>Executive</p>
+                            <ul>
+                                <li>4 noites</li>
+                                <li>café da manhã, almoço e jantar </li>
+                                <li>Acesso a área da Piscina</li>
+                                <li>Acesso aos bares e boates</li>
+                            </ul>
+                            <p>All Incluse</p>
+                            <ul>
+                                <li>4 noites</li>
+                                <li>café da manhã, almoço, café da tarde e jantar. </li>
+                                <li>Acesso a area da Piscina</li>
+                                <li>Acesso aos bares e boates (bebidas incluso)</li>
+                                <li>Atrações especiais</li>
+                                <li>Tour por todas as áreas do navio</li>
+                            </ul>
+                        </div>
+                        <p>Solicite o orçamento e escolha o melhor pacote para você e sua familia.</p>
                     </div>
                     <div class="card_2" >
                        <div class="wonder"> 
@@ -826,13 +863,79 @@
                 <div class="cruzeiro_galeria_2">
                     <div class="card_1">
                         <div class="msc"> 
-                            <p>msc</p>
+                            <p>Msc</p>
                        </div>
                 
                     </div>
                     <div class="card_2" >
-                       <div class="majestic"> 
-                            
+                       <div id="form_cruz" class="form-cruzeiro"> 
+                            <p>Fomulário cruzeiro</p>
+                            <form method="post" action="https://formsubmit.co/danilo.abilitygo@gmail.com">
+                               <div>
+                                    <label for="">Nome</label>
+                                    <input type="text" name="nome" required placeholder="Nome completo">
+                               
+                                
+                                    <label for="">Telefone</label>
+                                    <input type="tel" name="contato" required placeholder="(xx) xxxxx - xxxx">
+                              
+                                    <label for="">E-mail</label>
+                                    <input type="email" name="email" required placeholder="@email.com">
+                                </div>    
+                                <div >
+                                    <label for="">Cliente Agência de viagens?</label>
+                                    <div>
+                                        <input type="radio" name="cliente" id="cliente_sim" value="sim" required>
+                                        <label class="label_color" for="cliente_sim">Sim</label>
+                                        <input type="radio" name="cliente" id="cliente_nao" value="nao" required>
+                                        <label class="label_color" for="cliente_nao">Nao</label>
+                                    </div>
+                                </div>  
+                                <div >
+                                    <label for="">Escolha o pacote:</label>
+                                    <div>
+                                        <input type="radio" name="pacote"  value="Standard" id="standard">
+                                        <label class="label_color" for="standard">Standard</label>
+                                        <input type="radio" name="pacote" value="Executive" id="executive">
+                                        <label class="label_color" for="executive">Executive</label>
+                                        <input type="radio" name="pacote" value="All_incluse" id="allincluse">
+                                        <label class="label_color" for="allincluse">All Incluse</label>
+                                    </div>
+                                </div>   
+                                
+                                <div>
+                                    <label for="">Pacote para quantas pessoas?</label>    
+                                    <div>
+                                        <input type="radio" name="pacote_pessoas"  value="2" id="2">
+                                    <label class="label_color" for="2">2</label>
+                                    <input type="radio" name="pacote_pessoas" value="4" id="4">
+                                    <label class="label_color" for="4">4</label>
+                                    <input type="radio" name="pacote_pessoas" value="6_ou_+" id="6">
+                                    <label class="label_color" for="6">6 ou +</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="">Data da partida:</label>
+                                    <input type="date" name="data_partida" required>
+                                </div>
+                                <div>
+                                    <label for="">Serviços adicionais ou dúvidas:</label>
+                                    <textarea name="servicos_adicionais" id="" cols="35" rows="2" placeholder="Explique detalhadamente o assunto" ></textarea>
+                                </div>    
+                                <div>
+                                    <label for="">Forma de pagamento:( <small>pix 10% desconto</small>)</label>
+                                    <div>
+                                        <input type="radio" name="pagamento" value="credito_debito" id="pag_cartao">
+                                        <label class="label_color" for="pag_cartao">Crédito/Débito</label>
+                                        <input type="radio" name="pagamento" value="pix" id="pag_pix">
+                                        <label class="label_color" for="pag_pix">Pix</label>
+                                        <input type="radio" name="pagamento" value="boleto" id="pag_boleto">
+                                        <label class="label_color" for="pag_boleto">Boleto</label>
+                                    </div>    
+                                </div>   
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>    
+                            </form>
                         </div>
                     </div>
                 </div>
