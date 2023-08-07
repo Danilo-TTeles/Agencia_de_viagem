@@ -18,7 +18,7 @@
     <header>
         <div class="width-max">
             <div>
-                <a class="home" title="Home" href="index.html"><img class="logo" src="src/img/local-logo.png" alt="imagem de um localizador"></a>
+                <a class="home" title="Clique aqui e volte para página principal" href="index.html"><img class="logo" src="src/img/local-logo.png" alt="imagem de um localizador"></a>
                 <h1>Agência de viagens</h1>
             </div>
             <div>
@@ -39,8 +39,12 @@
                 </div>
                 <div class="form">
                    <h2>Informe seus dados</h2>
-                   <p><small> Para orçamento do cruzeiro <a href="#form_cruz">clique aqui</a></small></p>
+                   <p><small> Para orçamento do cruzeiro <a title="Clique aqui e preencha o formulário de cruzeiros" href="#form_cruz">clique aqui</a></small></p>
                    <form method="post" action="https://formsubmit.co/danilo.abilitygo@gmail.com">
+                        
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato conosco! Seu formulário foi enviado com sucesso e logo 
+                        retornaremos o contato pelo email ou telefone que foram informados, lembre-se que a qualquer momento você pode falar conosco através da nossa central de atendimento pelo (62) 99999 - 9999.">
                         <div >
                             <label for="">Nome</label>
                             <input type="text" name="nome" placeholder="Nome completo" required>
@@ -128,31 +132,32 @@
                             </div> 
                         </div>
                         <div>
-                            <p>Quarto com cama infantil?<p>
-                            
-                            
-                                <input type="radio" name="cama infantil?"  value="sim" id="cama_sim">
-                                <label for="cama_sim">Sim</label>
-                                <input type="radio" name="cama infantil?" value="nao" id="cama_nao">
-                                <label for="cama_nao">Não</label>
+                            <p>Qual pacote deseja escolher?<small>(veja as opções de cada pacote <a href="#destinos">aqui</a>)</small><p>
+                                <input type="radio" name="pacote" value="Standart" id="pac_standart">
+                                <label for="pac_standart">Standard</label>
+                                <input type="radio" name="pacote" value="Executive" id="pac_executive">
+                                <label for="pac_executive">Executive</label>
+                                <input type="radio" name="pacote" value="All incluse" id="pac_incluse">
+                                <label for="pac_incluse">All inclusive</label>
+                                <input type="radio" name="pacote" value="Custom" id="pac_custom">
+                                <label for="pac_custom">Custom</label>
                            
                         </div>
+                
                         <div>
-                            <p>Preferências de hospedagem:</p>
+                            <p>Forma de pagamento:( <small>pix 10% desconto</small>)</p>
+                                                              <input type="radio" name="pagamento" value="credito_debito" id="pag_cartao">
+                                <label class="label_color" for="pag_cartao">Crédito/Débito</label>
+                                <input type="radio" name="pagamento" value="pix" id="pag_pix">
+                                <label class="label_color" for="pag_pix">Pix</label>
+                                <input type="radio" name="pagamento" value="boleto" id="pag_boleto">
+                                <label class="label_color" for="pag_boleto">Boleto</label>
                             
-                                 <input type="checkbox" name="preferencias " value="Piscina" id="hospedagem-piscina">
-                                <label for="hospedagem-piscina">Piscina</label>
-                                <input type="checkbox" name="preferencias"  value="Wi-fi" id="hospedagem-Wi-fi">
-                                <label for="hospedagem-Wi-fi">Wi-fi</label>
-                                <input type="checkbox" name="preferencias"  value="Garagem" id="hospedagem-garagem">
-                                 <label for="hospedagem-garagem">Garagem</label>
-                                <input type="checkbox" name="preferencias" value="suite" id="hospedagem-suite">
-                                <label for="hospedagem-suite">Suite</label>
-                            
-                        </div>
-                        <button type="submit">Solicite seu orçamento</button>
-                        <button type="reset">Limpar</button>
-                        <input type="hidden" name="_next" value="https://http://127.0.0.1:5500//obg.html">
+                        </div>   
+                       
+                        <button title="Clique aqui e solicite seu orçamento" type="submit">Solicite seu orçamento</button>
+                        <button title="Limpar dados do formulário" type="reset">Limpar</button>
+                        
                     </form> 
                 </div>
             </div>
@@ -213,7 +218,7 @@
                                     <p>Principais pontos turísticos</p>
                                     <ul type="none">
                                         <li>AquaRio</li>
-                                        <li>Jarim Botânico</li>
+                                        <li>Jardim Botânico</li>
                                         <li>Arcos da Lapa</li>
                                         <li>Parque Nac. da Tijuca</li>
                                     </ul>
@@ -253,7 +258,7 @@
                             <div class="pacote">
                                <p>Incluso:</p>
                                 <ul> 
-                                    <li>Ida e volta aereo.</li>
+                                    <li>Ida e volta aéreo.</li>
                                     <li>Café da manha</li>
                                     <li>Almoço</li>
                                     <li>Hotel</li>
@@ -271,7 +276,7 @@
                              <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -286,11 +291,52 @@
             </div>
         </section>
         <section >
-            <div class="width-max">
+            <div id="destinos" class="width-max">
                 <div>
                     <h3>Destinos</h3>
-                    <p class="paragrafo">Conheça agora todos os destinos disponíveis, e viva o seu sonho de 
+                    <p class="paragrafo">Conheça agora todos os destinos e pacotes disponíveis, e viva o seu sonho de 
                         viajar do melhor jeito possível com a Agência de viagens. </p>
+                    <div class="pacotes_info">
+                        <div>
+                            <p>Standard</p>
+                            <ul>
+                                <li>Aéreo ida volta</li>
+                                <li>Café da manhã</li>
+                                <li>Almoço</li>
+                                <li>Hotel</li>
+                                <li>Pode contratar serviços adicionais</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Executive</p>
+                            <ul>
+                                <li>Aéreo ida volta</li>
+                                <li>Café da manhã, café da tarde</li>
+                                <li>Almoço, jantar</li>
+                                <li>Hotel</li>
+                                <li>Passeios turisticos incluso</li>
+                                <li>Pode contratar serviços adicionais</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>All inclusive</p>
+                            <ul>
+                                <li>Aéreo ida volta</li>
+                                <li>Café da manhã</li>
+                                <li>Almoço</li>
+                                <li>Hotel</li>
+                                <li>Passeios turísticos incluso</li>
+                                <li>Guia de viagem exclusivo 24h</li>
+                                <li>Todos serviços inclusos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Custom</p>
+                            <ul>
+                                <li>Todos os serviços são customizáveis de acordo com as preferências do cliente.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="destinos-galeria">
                     <div class="card-destino">
@@ -303,7 +349,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -323,7 +369,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -343,7 +389,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -363,7 +409,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -383,7 +429,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -403,7 +449,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -423,7 +469,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -443,7 +489,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -463,7 +509,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -483,7 +529,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -503,7 +549,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -523,7 +569,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -543,7 +589,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -563,7 +609,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -583,7 +629,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -603,7 +649,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -623,7 +669,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -643,7 +689,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -663,7 +709,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -683,7 +729,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -703,7 +749,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -723,7 +769,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -743,7 +789,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -763,7 +809,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -783,7 +829,7 @@
                             <div class="pacote">
                                 <p>Incluso:</p>
                                 <ul> 
-                                     <li>Ida e volta aereo.</li>
+                                     <li>Ida e volta aéreo.</li>
                                      <li>Café da manha</li>
                                      <li>Almoço</li>
                                      <li>Hotel</li>
@@ -825,7 +871,7 @@
                 <div class="cruzeiro_galeria">
                     <div class="card_1">
                        
-                        <p>Temos varios ofertas imperdiveis de cruzeiros, pacotes disponiveis com 3 ou 4 noites,temos o pacote Economico, o Executivo e o All Incluse, conheça um pouco das vantagens abaixo.</p> 
+                        <p>Temos varios ofertas imperdiveis de cruzeiros, pacotes disponiveis com 3 ou 4 noites,temos o pacote Standart, o Executivo e o All Incluse, conheça um pouco das vantagens de cada um deles.</p> 
                         <div>
                             <p>Standard</p>
                             <ul>
@@ -840,17 +886,17 @@
                                 <li>Acesso a área da Piscina</li>
                                 <li>Acesso aos bares e boates</li>
                             </ul>
-                            <p>All Incluse</p>
+                            <p>All Inclusive</p>
                             <ul>
                                 <li>4 noites</li>
                                 <li>café da manhã, almoço, café da tarde e jantar. </li>
-                                <li>Acesso a area da Piscina</li>
+                                <li>Acesso a área da Piscina</li>
                                 <li>Acesso aos bares e boates (bebidas incluso)</li>
                                 <li>Atrações especiais</li>
                                 <li>Tour por todas as áreas do navio</li>
                             </ul>
                         </div>
-                        <p>Solicite o orçamento e escolha o melhor pacote para você e sua familia.</p>
+                        
                     </div>
                     <div class="card_2" >
                        <div class="wonder"> 
@@ -871,7 +917,9 @@
                        <div id="form_cruz" class="form-cruzeiro"> 
                             <p>Fomulário cruzeiro</p>
                             <form method="post" action="https://formsubmit.co/danilo.abilitygo@gmail.com">
-                               <div>
+                                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+                                
+                                <div>
                                     <label for="">Nome</label>
                                     <input type="text" name="nome" required placeholder="Nome completo">
                                
@@ -881,6 +929,8 @@
                               
                                     <label for="">E-mail</label>
                                     <input type="email" name="email" required placeholder="@email.com">
+                                    <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato conosco! Seu formulário foi enviado com sucesso e logo 
+                                retornaremos o contato pelo email ou telefone que foram informados, lembre-se que a qualquer momento você pode falar conosco através da nossa central de atendimento pelo (62) 99999 - 9999.">
                                 </div>    
                                 <div >
                                     <label for="">Cliente Agência de viagens?</label>
@@ -933,8 +983,8 @@
                                         <label class="label_color" for="pag_boleto">Boleto</label>
                                     </div>    
                                 </div>   
-                                <button type="submit">Enviar</button>
-                                <button type="reset">Limpar</button>    
+                                <button title="Clique aqui e solicite o orçamento do cruzeiro" type="submit">Enviar</button>
+                                <button title="Limpar dados do formulário type="reset">Limpar</button>    
                             </form>
                         </div>
                     </div>
@@ -963,22 +1013,22 @@
                 <h3>Nossas redes sociais</h3>
                 <div>   
                     <img src="src/img/fb.png" alt="logo do facebook">
-                    <a href="https://www.facebook.com/">/AgenciaDeViagem</a>
+                    <a title="Clique aqui e veja nossas redes sociais" href="https://www.facebook.com/">/AgenciaDeViagem</a>
                 </div>    
                 <div>    
                     <img src="src/img/ig.png" alt="logo do instagran">
-                    <a href="https://www.instagram.com/">@AgenciaDeViagem</a>
+                    <a title="Clique aqui e veja nossas redes sociais" href="https://www.instagram.com/">@AgenciaDeViagem</a>
                 </div>    
                 <div>    
                     <img src="src/img/tt.png" alt="logo do twiter">
-                    <a href="https://www.twitter.com/">@AgenciaDeViagem</a>
+                    <a title="Clique aqui e veja nossas redes sociais" href="https://www.twitter.com/">@AgenciaDeViagem</a>
                 </div>    
             </div>
         </div>
         <div class="direitos">
             <p> &copy;Agencia de viagens - todos os direitos reservados </p>
-            <p>Desenvolvido por <span>Danilo teles</span><a target="_blank" href="https://github.com/Danilo-TTeles"><img src="src/img/github.png" alt="logomarca do github"></a>
-             <a target="_blank" href="https://www.linkedin.com/in/danilo-tteles"><img src="src/img/linkedin (1).png" alt="logomarca do linkedin"></a></p>
+            <p>Desenvolvido por <span>Danilo teles</span><a title="Clique aqui e veja as redes do desenvolvedor" target="_blank" href="https://github.com/Danilo-TTeles"><img src="src/img/github.png" alt="logomarca do github"></a>
+             <a title="Clique aqui e veja as redes do desenvolvedor" target="_blank" href="https://www.linkedin.com/in/danilo-tteles"><img src="src/img/linkedin (1).png" alt="logomarca do linkedin"></a></p>
         </div>
     </footer>
 </body>

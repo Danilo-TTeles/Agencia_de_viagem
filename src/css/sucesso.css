@@ -3,18 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-main{
-    background-color: #fbf7dd;
-    
-}
-.width-max{
-    max-width: 1024px;
-    margin: 0 auto;
-}
-.width-max div:first-child span{
-    font-weight: bolder;
-    color: rgb(29, 29, 29);
-}
 header{
     padding: 20px 0;
     background: linear-gradient(to bottom, #8e8e8e, #fff, #8e8e8e);
@@ -59,7 +47,7 @@ header .icones{
     width:25px;
     margin-bottom: -5px;
     margin-right: 4px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 header a,header p{
     text-decoration: none;
@@ -78,7 +66,7 @@ header a:hover{
     border: none;
     border-radius: 5px;
     transition: 2s;
-    scale: 1.05;
+    scale: 1.04;
 }
 header .home:hover{
     box-shadow: none;
@@ -91,79 +79,66 @@ header .home:hover{
 
     }
 }
-main section{
-    background-image: url('../img/bahia.jpg');
-    background-size: cover;
-    width: 100%;
-    padding: 40px 0;
+main{
+    background-color: #fbf7dd;
+    background-image: url('../img/texturas/photos_2023_7_2_fst_wrinkled-page.jpg');
+    background-position: center;
+    background-size: contain;
+     height:450px;
+ }
+ main .width-max div{
+    padding-top: 50px;
+ }
+main .width-max div p:first-of-type {
+  text-align: center;
+  font-size: 30px;
+  color: #4d4c4c;
+  font-weight: bold;
+  font-family: 'ubuntu', sans-serif;
+
+} 
+main .width-max div p{
+    color: #4d4c4c;
+    margin: 20px 100px 0px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'roboto condensed', sans-serif;
+    
 }
-main section .width-max .titulo{
-    width: 80%;
-    margin: 0 auto;
-    border-radius:20px 1px 0 0;
-    padding: 10px 0px;
-    text-align: center;
+main .width-max div p span{
+    color: #4b12a8;
+    font-weight: bold;
+}
+main .width-max div .voltar{
+    text-decoration: none;
+    font-size: 20px;
+    color: #4b12a8;
+    border: 1px solid  #4b12a8 ;
+    padding: 2px 50px ;
+    border-radius: 20px;
+    
+}
+main .width-max div div{
+   display: flex;
+   justify-content: center;
+}
+main .width-max div .voltar:hover{
     background-color: #4b12a8;
     color: #fff;
-    font-family: 'ubuntu', sans-serif;
-    font-weight: 500;
 }
-main section .width-max div:first-of-type p{
-    font-weight: 500;
-}
-main .width-max form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0px auto;
-    background-color: #fff;
-    opacity: 0.9;
-    padding-bottom: 30px;
-    border-radius: 0 0 20px 1px;
-}
-section .width-max form input, label, select, textarea, button{
-    width: 80%;
-    margin: 0 auto;
-    color: #4d4c4c;
-}
-section .width-max form option{
-    color: #717170;
-}
- section .width-max form  input, select, textarea{
-    margin-bottom:10px;
-    background-color: #5d15d168;
-    border: none;
-    border-radius: 4px;
-    padding: 3px;
+ .width-max{
+     max-width: 1024px;
+     margin: 0 auto;
+     
  }
-section .width-max form label{
-    margin-bottom:5px;
-    color: #717170;
-}
-section  form div{
-    margin: 20px auto;
-}
-section  form div button{
-    margin-left: 5px;
-    padding: 4px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #5d15d1;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'ubuntu', sans-serif;
-    width: 200px;
-}
-section  button:hover{
-    box-shadow:0  0 8px 3px #717170;
-}
-section form select option{
-    font-size: 18px;
-}
+ 
+
+
+
 footer{
     background-color: #5d15d1;
     color: #fff;
+    
    
 }
 footer .width-max {
@@ -176,7 +151,7 @@ footer h3{
     font-size: 25px;
     margin: 25px 0 10px;
     font-family: 'ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 footer  a{
     text-decoration: none;
@@ -228,11 +203,12 @@ footer  .width-max h3{
     color: #fff;
     padding-bottom: 10px;
 }
-p, label, option{
+p, label{
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
+    
 
 }
-a{
+a, option{
     font-family: 'Roboto Condensed', sans-serif; 
 }

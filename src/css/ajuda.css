@@ -5,6 +5,9 @@
 }
 main{
     background-color: #fbf7dd;
+    background-image: url('../img/texturas/photos_2023_7_2_fst_wrinkled-page.jpg');
+    background-position: center;
+    background-size: contain;
 }
 .width-max{
     max-width: 1024px;
@@ -48,7 +51,7 @@ header .logo{
     width: 30px;
     height: 33px;
     margin-right: 3px;
-    animation: 10s infinite alternate-reverse rotacao;
+    animation: 2s infinite alternate-reverse rotacao;
 }
 header .icones{
     width:25px;

@@ -17,7 +17,7 @@
     <header>
         <div class="width-max">
             <div>
-                <a class="home" title="Home" href="index.html"><img class="logo" src="src/img/local-logo.png" alt="imagem de um localizador"></a>
+                <a class="home" title="Clique aqui e volte para página principal" href="index.html"><img class="logo" src="src/img/local-logo.png" alt="imagem de um localizador"></a>
                 <h1>Agência de viagens</h1>
             </div>
             <div>
@@ -32,12 +32,15 @@
     <main>
         <section>
             <div class="width-max">
-                <div>
+                <div class="titulo">
                     <h2>Fale conosco</h2>
                 <p>Utilize nossos canais para esclarecer suas dúvidas, solicitar informações ou fazer sugestões sobre nossos serviços.</p>
                 </div>
                 <div>
                     <form method="post" action="https://formsubmit.co/danilo.abilitygo@gmail.com">
+    
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+                        
                         <label for="">Assunto</label>
                         <select name="Assunto" id="">
                             <option value="">Selecione um assunto</option>
@@ -54,20 +57,25 @@
                             <option value="outros">Outros</option>
                         </select>  
                         <label for="">Nome</label>
-                        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+                        <input type="text" name="nome" placeholder="Digite seu nome completo"  required>
                         <label for="">Numero da reserva</label>
                         <input type="number" name="num_reserva" placeholder="xxxx.xxxx. xxxx.xxxx xx" required>
                         <label for="">E-mail</label>
-                        <input type="email" name="e-mail" placeholder="@email.com" required>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato conosco! Seu formulário foi enviado com sucesso e logo 
+                        retornaremos o contato pelo email ou telefone que foram informados, lembre-se que a qualquer momento você pode falar conosco através da nossa central de atendimento pelo (62) 99999 - 9999.">
+                        <input type="email" name="email" placeholder="@email.com" required>
                         <label for="">CPF</label>
-                        <input type="number" name="cpf" placeholder="xxx.xxx.xxx.xx" required>
+                        <input type="number" name="cpf" placeholder="xxx.xxx.xxx.xx"required>
                         <label for="">Telefone residencial</label>
                         <input type="tel" name="telefon-res" placeholder="(xx) xxxxx - xxxxx">
                         <label for="">Celular</label>
-                        <input type="tel" name="celular"  placeholder="(xx) xxxxx - xxxxx">
+                        <input type="tel" name="celular"  placeholder="(xx) xxxxx - xxxxx" required>
                         <label for="">Mensagem</label>
-                        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Deixe sua mensagem explicando detalhadamente o assunto."></textarea>
-                        <button type="submit">Enviar mensagem</button>
+                        <textarea name="mensagem" id="" cols="30" rows="10" required placeholder="Deixe sua mensagem explicando detalhadamente o assunto."></textarea>
+                        <div>
+                            <button title="Clique aqui e envie o formulário de ajuda" type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
                     </form>
                 </div>
             </div>

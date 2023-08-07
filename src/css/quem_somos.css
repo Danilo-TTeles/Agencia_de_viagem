@@ -3,15 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.width-max{
-    max-width: 1024px;
-    margin: 0 auto;
-}
-.width-max h3{
-    font-size: 25px;
-    margin: 25px 0 10px;
-}
 header{
     padding: 20px 0;
     background: linear-gradient(to bottom, #8e8e8e, #fff, #8e8e8e);
@@ -50,7 +41,7 @@ header .logo{
     width: 30px;
     height: 33px;
     margin-right: 3px;
-    animation: 10s infinite alternate-reverse rotacao;
+    animation: 2s infinite alternate-reverse rotacao;
 }
 header .icones{
     width:25px;
@@ -89,6 +80,9 @@ header .home:hover{
 main{
     background-color: #fbf7dd;
     padding: 40px 0 10px;
+    background-image: url('../img/texturas/photos_2023_7_2_fst_wrinkled-page.jpg');
+    background-position: center;
+    background-size: contain;
 }
  main .width-max h2, .icones-nav a{
     font-size: 30px;
@@ -97,8 +91,17 @@ main{
     font-weight: 500;
 }
 main .width-max p {
-    color: #717170;
+    color: #4d4c4c;
+    
     line-height: 25px;
+}
+.width-max{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.width-max h3{
+    font-size: 25px;
+    margin: 25px 0 10px;
 }
 section .icones-nav{
     display: flex;
