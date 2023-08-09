@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de viagens</title>
     <link rel="stylesheet" href="src/css/style.css" type="text/css">
+    <link rel="stylesheet" href="src/css/media_style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -133,6 +134,7 @@
                         </div>
                         <div>
                             <p>Qual pacote deseja escolher?<small>(veja as opções de cada pacote <a href="#destinos">aqui</a>)</small><p>
+                               <div>
                                 <input type="radio" name="pacote" value="Standart" id="pac_standart">
                                 <label for="pac_standart">Standard</label>
                                 <input type="radio" name="pacote" value="Executive" id="pac_executive">
@@ -141,17 +143,20 @@
                                 <label for="pac_incluse">All inclusive</label>
                                 <input type="radio" name="pacote" value="Custom" id="pac_custom">
                                 <label for="pac_custom">Custom</label>
+                               </div>
                            
                         </div>
                 
                         <div>
                             <p>Forma de pagamento:( <small>pix 10% desconto</small>)</p>
-                                                              <input type="radio" name="pagamento" value="credito_debito" id="pag_cartao">
-                                <label class="label_color" for="pag_cartao">Crédito/Débito</label>
-                                <input type="radio" name="pagamento" value="pix" id="pag_pix">
-                                <label class="label_color" for="pag_pix">Pix</label>
-                                <input type="radio" name="pagamento" value="boleto" id="pag_boleto">
-                                <label class="label_color" for="pag_boleto">Boleto</label>
+                                <div>
+                                    <input type="radio" name="pagamento" value="credito_debito" id="pag_cartao">
+                                    <label class="label_color" for="pag_cartao">Crédito/Débito</label>
+                                    <input type="radio" name="pagamento" value="pix" id="pag_pix">
+                                    <label class="label_color" for="pag_pix">Pix</label>
+                                    <input type="radio" name="pagamento" value="boleto" id="pag_boleto">
+                                    <label class="label_color" for="pag_boleto">Boleto</label>
+                                </div>
                             
                         </div>   
                        
@@ -241,6 +246,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile">
+                    <a href="#plano">Conferir pacotes </a>
+                </div>
             </div>
         </section>
         <section class="oferta" >
@@ -287,6 +295,9 @@
                         
                         </div>
                     </div>
+                </div>
+                <div class="mobile">
+                    <a href="#plano">Conferir pacotes </a>
                 </div>
             </div>
         </section>
@@ -863,6 +874,9 @@
 
 
                 </div>
+                <div class="mobile">
+                    <a href="#plano">Conferir pacotes </a>
+                </div>
             </div>
         </section>
         <section>
@@ -873,28 +887,34 @@
                        
                         <p>Temos varios ofertas imperdiveis de cruzeiros, pacotes disponiveis com 3 ou 4 noites,temos o pacote Standart, o Executivo e o All Incluse, conheça um pouco das vantagens de cada um deles.</p> 
                         <div>
-                            <p>Standard</p>
-                            <ul>
-                                <li>3 noites</li>
-                                <li>Almoço e jantar</li>
-                                <li>Acesso a área da Piscina</li>
-                            </ul>
-                            <p>Executive</p>
-                            <ul>
-                                <li>4 noites</li>
-                                <li>café da manhã, almoço e jantar </li>
-                                <li>Acesso a área da Piscina</li>
-                                <li>Acesso aos bares e boates</li>
-                            </ul>
-                            <p>All Inclusive</p>
-                            <ul>
-                                <li>4 noites</li>
-                                <li>café da manhã, almoço, café da tarde e jantar. </li>
-                                <li>Acesso a área da Piscina</li>
-                                <li>Acesso aos bares e boates (bebidas incluso)</li>
-                                <li>Atrações especiais</li>
-                                <li>Tour por todas as áreas do navio</li>
-                            </ul>
+                            <div>
+                                <p>Standard</p>
+                                <ul>
+                                    <li>3 noites</li>
+                                    <li>Almoço e jantar</li>
+                                    <li>Acesso a área da Piscina</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Executive</p>
+                                <ul>
+                                    <li>4 noites</li>
+                                    <li>café da manhã, almoço e jantar </li>
+                                     <li>Acesso a área da Piscina</li>
+                                    <li>Acesso aos bares e boates</li>
+                                 </ul>
+                            </div>
+                            <div>
+                                <p>All Inclusive</p>
+                                <ul>
+                                    <li>4 noites</li>
+                                    <li>café da manhã, almoço, café da tarde e jantar. </li>
+                                    <li>Acesso a área da Piscina</li>
+                                    <li>Acesso aos bares e boates (bebidas incluso)</li>
+                                    <li>Atrações especiais</li>
+                                    <li>Tour por todas as áreas do navio</li>
+                                </ul>
+                            </div>
                         </div>
                         
                     </div>
@@ -984,7 +1004,7 @@
                                     </div>    
                                 </div>   
                                 <button title="Clique aqui e solicite o orçamento do cruzeiro" type="submit">Enviar</button>
-                                <button title="Limpar dados do formulário type="reset">Limpar</button>    
+                                <button title="Limpar dados do formulário"type="reset">Limpar</button>    
                             </form>
                         </div>
                     </div>

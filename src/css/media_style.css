@@ -1,0 +1,284 @@
+@media  (max-width:425px){
+    header .width-max  {
+        display:flex;
+        flex-direction: column;
+        
+    }
+    header .width-max .logo{
+        margin-right: 0px;
+    }
+    header .width-max div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header .width-max div:last-of-type p, header .width-max div:last-of-type div  a  {
+        font-size: 19px;
+    }
+    header .width-max div:last-of-type div  a{
+        color: #4b12a8;
+        scale: none;
+        transition: none;
+    }
+    main{
+        background-color:#d6d6d5;
+        background-image:none;
+    } 
+    main .width-max{
+        width: 90%;
+    }
+    main .banner {
+        max-width: 425px;
+        width: 100%;
+        height: 100%;
+        animation: none;
+    }
+    main .banner .plane-left{
+        animation: none;
+        transform: rotate(-20deg);
+    }
+    main .form form{
+        padding-bottom: 20px;
+    }
+    main .banner .titulo-form{
+        justify-content: space-evenly;
+    }
+    main .banner .titulo-form h2 {
+        margin-left: 0;
+    }
+    main .form form div:nth-of-type(2), main .form form div:nth-of-type(3){
+        flex-direction: column;
+    }
+    main .form form div:nth-of-type(2) div, main .form form div:nth-of-type(3) div{
+        width: 99%;
+    }
+    main .form form div:nth-of-type(4) div{
+        flex-wrap: wrap;
+    }
+    main .form form small{
+        font-size: 17px;
+    }
+    main .form button{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 10px;
+        text-align: center;
+    }   
+    main .oferta .width-max .galeria{
+        flex-direction: column;
+        height: 800px;
+    }
+    main .oferta .width-max .galeria .card-1, .oferta .width-max .galeria .card-2{
+        margin: 5px 0;
+        width: 100%;
+    }
+    main .oferta .width-max .galeria .card-1:hover, .oferta .width-max .galeria .card-2:hover{
+        .oferta-pacote{
+            display: none;
+        }
+    }
+    main  .oferta .width-max .mobile, .width-max .mobile{
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+    .plano:hover, .card-destino div:hover{
+        .pacote{
+            display: none;
+        }
+    }
+    .plano{
+        height: 200px;
+    }
+    .width-max .pacotes_info{
+        flex-direction: column;
+    }
+    .width-max .pacotes_info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .pacotes_info  p{
+        text-align: center;
+    }
+    .cruzeiro_galeria, .cruzeiro_galeria_2{
+        flex-direction: column;
+    }
+    .cruzeiro_galeria .card_2,  .cruzeiro_galeria_2 .card_1{
+        display: none;
+    }
+    .cruzeiro_galeria .card_1, .cruzeiro_galeria_2 .card_2{
+        width: 95%;
+    }
+    footer .width-max {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:426px)
+and     (max-width:768px){
+    header .width-max  {
+        display:flex;
+        flex-direction: column;
+        
+    }
+    header .width-max .logo{
+        margin-right: 0px;
+    }
+    header .width-max div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header .width-max div:last-of-type p, header .width-max div:last-of-type div  a  {
+        font-size: 19px;
+    }
+    header .width-max div:last-of-type div  a{
+        color: #4b12a8;
+        scale: none;
+        transition: none;
+    }
+    main{
+        background-color:#d6d6d5;
+        background-image:none;
+    } 
+    main .width-max{
+        width: 90%;
+    }
+    main .banner {
+        max-width: 768px;
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes aviao{
+        0%{transform:translate(0) ;
+    }   
+        100% {transform: translate(550px);
+    }
+    }
+    main .banner .titulo-form h2{
+        margin-left: 25%;
+    }
+    main .form form div:nth-of-type(2), main .form form div:nth-of-type(3){
+        flex-direction: column;
+        
+    }
+    main .form form div:nth-of-type(2) div, main .form form div:nth-of-type(3) div{
+        width: 99%;
+    }
+    main .form form div:nth-of-type(4) div{
+        flex-wrap: wrap;
+    }
+    main .form form small{
+        font-size: 17px;
+    }
+
+    main .oferta .width-max .galeria{
+        flex-direction: column;
+        height: 800px;
+    }
+    main .oferta .galeria .card-1{
+        margin-bottom: 15px;
+        z-index: 2;
+    }
+    main .oferta .galeria .card-1, main .oferta .galeria .card-2, .anuncio div{
+        max-width: 768px;
+        width: 100%;
+    }
+    main .oferta .width-max .anuncio{
+        flex-direction: column;
+    }
+    main .oferta .width-max .anuncio div{
+        margin-bottom: 15px;
+    }
+    .width-max .pacotes_info{
+        flex-direction: column;
+     }
+    .width-max .pacotes_info div, .cruzeiro_galeria .card_1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cruzeiro_galeria .card_2, .cruzeiro_galeria_2 .card_1 {
+        display: none;
+    }
+    .pacotes_info  p{
+        text-align: center;
+    }
+    .cruzeiro_galeria, .cruzeiro_galeria_2{
+        flex-direction: column;
+        
+    }
+    .cruzeiro_galeria .card_1, .cruzeiro_galeria_2 .card_2{
+        width: 95%;
+    }
+}
+
+@media (min-width:769px)
+and     (max-width:1024px){
+
+    header .width-max div:last-of-type div  a{
+    text-align: center;
+    }
+    @keyframes aviao{
+        0%{transform:translate(0) ;
+    }   
+        100% {transform: translate(700px);
+    }
+    }
+    main .width-max{
+        width: 90%;
+    }
+    main .banner .titulo-form h2{
+        margin-left: 32%;
+    }
+    main .oferta .width-max .galeria{
+        flex-direction: column;
+        height: 800px;
+    }
+    main .oferta .galeria .card-1, main .oferta .galeria .card-2, .anuncio div{
+        max-width: 1024px;
+        width: 100%;
+    }
+    main .oferta .galeria .card-1{
+        margin-bottom: 15px;
+        z-index: 2;
+    }
+    main .oferta .width-max .anuncio div{
+        width: 48%;
+    }
+    .oferta .width-max .anuncio div .plano, .oferta .width-max .anuncio div .plano .pacote{
+        width: 100%;
+    }
+    .oferta .width-max .anuncio div .plano .pacote a{
+        margin:0 50px;
+    }
+    .width-max .pacotes_info div{
+        width: 20%;
+    }
+    .cruzeiro_galeria .card_1, .cruzeiro_galeria_2 .card_2 {
+        width: 100%;
+        margin-bottom: 25px; 
+    }
+    .cruzeiro_galeria .card_1 div{
+        display: flex;
+        flex-direction: row;
+    }
+    .cruzeiro_galeria .card_1 div div{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .cruzeiro_galeria .card_2 .wonder, .cruzeiro_galeria_2 .card_1{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cruzeiro_galeria, .cruzeiro_galeria_2{
+        flex-direction: column;
+        height: 100%;
+    }
+    .cruzeiro_galeria_2{
+        flex-direction: column-reverse;
+    }
+}
