@@ -1,0 +1,143 @@
+@media  (max-width:425px){
+    header .width-max div:first-of-type {
+        justify-content: center;
+        margin-bottom: 20px;
+     }
+    header .width-max  {
+        display:flex;
+        flex-direction: column;
+    }
+    header .width-max div:first-of-type {
+        justify-content: center;   
+    }
+    header .width-max .logo{
+        margin-right: 0px;
+    }
+    header .width-max div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header .width-max div:last-of-type p, header .width-max div:last-of-type div  a  {
+        font-size: 19px;
+    }
+    header .width-max div:last-of-type div  a{
+        color: #4b12a8;
+        scale: none;
+        transition: none;
+    }
+    main{
+        background-color:#d6d6d5;
+        background-image:none;
+    } 
+    main .width-max{
+        width: 90%;
+    }
+    main .width-max .icones-nav{
+        flex-direction: column;
+    }
+    main .width-max .icones-nav div{
+        margin-bottom: 15px;
+    }
+    main .width-max .localizacao{
+        flex-direction: column;
+    }
+    main .width-max .localizacao iframe{
+        max-width: 425px;
+        width: 100%;
+    }
+    main .width-max .localizacao div:first-of-type{
+        width: 100%;
+        margin-left: 0;  
+    }
+    main .width-max .news{
+        flex-direction: column;
+    }
+    main .width-max .news div:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .width-max .news div:last-of-type .limite{
+        display: flex;
+        flex-direction: column;  
+    }
+    main .width-max .news div:last-of-type .limite div label{
+        margin:10px auto 5px;
+    }
+    footer .width-max {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (min-width:426px)
+and     (max-width:768px){
+    header .width-max div:first-of-type {
+        justify-content: center;
+        margin-bottom: 20px;
+     }
+    header .width-max  {
+        display:flex;
+        flex-direction: column;
+    }
+    header .width-max .logo{
+        margin-right: 0px;
+    }
+    header .width-max div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header .width-max div:last-of-type p, header .width-max div:last-of-type div  a  {
+        font-size: 19px;
+    }
+    header .width-max div:last-of-type div  a{
+        color: #4b12a8;
+        scale: none;
+        transition: none;
+    }
+    main{
+        background-color:#d6d6d5;
+        background-image:none;
+    } 
+    main .width-max{
+        width: 90%;
+    }
+    main .width-max .icones-nav{
+        text-align: center;
+        
+    }
+    main .width-max .localizacao{
+        flex-direction: column;
+    }
+    main .width-max .localizacao iframe{
+        max-width:768px;
+        width: 100%;
+    }
+    main .width-max .localizacao div:first-of-type{
+        width: 100%;
+        margin-left: 0;  
+    }
+    main .width-max .news, .limite{
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width:769px)
+and     (max-width:1024px){
+    header .width-max div:last-of-type div  a{
+    text-align: center;
+    }
+    .width-max{
+        width: 90%;
+    }
+    main .width-max .localizacao div{
+        width: 50%;
+    }
+   main .width-max .localizacao iframe{
+    width: 100%;
+   }
+}

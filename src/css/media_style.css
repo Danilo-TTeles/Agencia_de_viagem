@@ -1,4 +1,8 @@
 @media  (max-width:425px){
+    header .width-max div:first-of-type {
+        justify-content: center;
+        margin-bottom: 20px;
+     }
     header .width-max  {
         display:flex;
         flex-direction: column;
@@ -119,6 +123,10 @@
 
 @media (min-width:426px)
 and     (max-width:768px){
+    header .width-max div:first-of-type {
+        justify-content: center;
+        margin-bottom: 20px;
+     }
     header .width-max  {
         display:flex;
         flex-direction: column;
@@ -217,7 +225,6 @@ and     (max-width:768px){
 
 @media (min-width:769px)
 and     (max-width:1024px){
-
     header .width-max div:last-of-type div  a{
     text-align: center;
     }

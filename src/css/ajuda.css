@@ -15,7 +15,7 @@ main{
 }
 header{
     padding: 20px 0;
-    background: linear-gradient(to bottom, #8e8e8e, #fff, #8e8e8e);
+    background: linear-gradient(to bottom, #2c2c2c, #8e8e8e, #fff, #8e8e8e, #2c2c2c);
 }
 header h1{
     font-family: 'ubuntu', sans-serif;
@@ -57,11 +57,11 @@ header .icones{
     width:25px;
     margin-bottom: -5px;
     margin-right: 4px;
-    opacity: 0.7;
+    
 }
 header a,header p{
     text-decoration: none;
-    color:#4d4c4c;
+    color:#2c2c2c;
     padding: 4px 10px; 
     font-weight: 600; 
 }
@@ -74,8 +74,11 @@ header a:hover{
     box-shadow: 3px 5px 5px 2px #4b12a8;
     border: none;
     border-radius: 5px;
-    transition: 2s;
-    scale: 1.05;
+    transition: 3s;
+    scale: 1.04;
+}
+header .width-max div:last-of-type a:hover{
+    background-color: #fff;
 }
 header .home:hover{
     box-shadow: none;
@@ -104,7 +107,7 @@ header .home:hover{
     align-items: center ;
     height: 80px;
     width: 700px;
-    background-color: #5c13d263;
+    background: linear-gradient(to bottom, #2c2c2c, #4b12a8, #5c13d263, #4b12a8, #2c2c2c);
     border-radius: 10px;
 
 }
@@ -165,25 +168,9 @@ header .home:hover{
     position: relative;
     
 }
-.artigos-populares .card-1:hover, .artigos-populares .card-2:hover, .artigos-populares .card-3:hover, .artigos-populares .card-4:hover{
-    
-    .artigo-resposta{
-        display: block;
-        position: absolute;
-        top:105px;
-        left:0px;
-        box-shadow: 0 0 5px 5px #4d4c4c;
-        background-color: #fff;
-        max-width: 250px;
-        width: 100%;
-        border-radius: 5px;
-        padding: 20px 10px ;
 
-        
-
-    }
     
-}
+
 .artigos-populares .card-titulo{ 
     font-weight: 600;
     color: #717170;
@@ -243,7 +230,7 @@ section:nth-child(2) h3, section:last-of-type h3{
  margin: 10px auto 30px;
  font-size: 25px;
  text-align: center;
- background-color: #5c13d263;
+ background: linear-gradient(to bottom, #717170, #5c13d263, #717170);
  color: #fff;
  width: 70%;
  padding: 5px;
@@ -307,7 +294,7 @@ section:nth-child(2) h3, section:last-of-type h3{
     
 } 
 footer{
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #2c2c2c, #4b12a8, #5d15d1, #4b12a8, #2c2c2c);
     color: #fff; 
 }
 footer .width-max {

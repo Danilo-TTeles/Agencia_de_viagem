@@ -5,7 +5,7 @@
 }
 header{
     padding: 20px 0;
-    background: linear-gradient(to bottom, #8e8e8e, #fff, #8e8e8e);
+    background: linear-gradient(to bottom, #2c2c2c, #8e8e8e, #fff, #8e8e8e, #2c2c2c);
 }
 header h1{
     font-family: 'ubuntu', sans-serif;
@@ -47,15 +47,12 @@ header .icones{
     width:25px;
     margin-bottom: -5px;
     margin-right: 4px;
-    opacity: 0.7;
 }
 header a,header p{
     text-decoration: none;
     color:#4d4c4c;
     padding: 4px 10px; 
-    font-weight: 600;
-    
-    
+    font-weight: 600;  
 }
 header a{
     transition:1s;
@@ -65,8 +62,11 @@ header a:hover{
     box-shadow: 3px 5px 5px 2px #4b12a8;
     border: none;
     border-radius: 5px;
-    transition: 2s;
+    transition: 3s;
     scale: 1.04;
+}
+header .width-max div:last-of-type a:hover{
+    background-color: #fff;
 }
 header .home:hover{
     box-shadow: none;
@@ -84,10 +84,14 @@ main{
     background-image: url('../img/texturas/photos_2023_7_2_fst_wrinkled-page.jpg');
     background-position: center;
     background-size: contain;
-     height:450px;
+     height:100vh;
+     padding: 30px 0;
  }
  main .width-max div{
-    padding-top: 50px;
+    padding: 50px 0;
+    width: 80%;
+    margin:0 auto
+    
  }
 main .width-max div p:first-of-type {
   text-align: center;
@@ -136,7 +140,7 @@ main .width-max div .voltar:hover{
 
 
 footer{
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #2c2c2c, #4b12a8, #5d15d1, #4b12a8, #2c2c2c);
     color: #fff;
     
    
