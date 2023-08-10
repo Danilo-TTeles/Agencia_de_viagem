@@ -607,7 +607,7 @@ header .home:hover{
 .cruzeiro_galeria_2 .form-cruzeiro p{
     font-family: 'ubuntu', sans-serif;
     font-weight: 500;
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #2c2c2c,  #5d15d1, #2c2c2c);
     border-radius: 20px 1px 0;
     text-align: center;
     padding: 5px 0;
