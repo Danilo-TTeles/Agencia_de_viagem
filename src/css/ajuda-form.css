@@ -152,7 +152,7 @@ section  form div button{
     padding: 4px 20px;
     border-radius: 5px;
     border: none;
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #4d4c4c, #4b12a8);
     color: #fff;
     font-weight: bold;
     font-size: 16px;

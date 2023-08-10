@@ -213,15 +213,16 @@ section .news form input{
 
 }
 section .news form label{
-    color: #717170;
+    color: #4d4c4c;
     font-size: 18px;
+    margin-bottom: 5px;
 } 
 section .news form button{
     margin: 20px 0;
     padding: 4px 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #717170;
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #4d4c4c, #4b12a8);
     color: #fff;
     font-weight: bold;
     font-size: 15px;

@@ -226,7 +226,7 @@ header .home:hover{
     padding: 5px 30px;
     border-radius: 5px;
     border: none;
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #4d4c4c, #4b12a8);
     color: #fff;
     font-family: 'ubuntu', sans-serif;
     font-weight: 500;
@@ -352,9 +352,9 @@ header .home:hover{
 }
 .oferta .width-max a, .card-destino a, .width-max .mobile a{
     text-decoration: none;
-    margin: 0 auto;
+    margin: 10px auto 0;
     color: #fff;
-    background-color: #5d15d1;
+    background: linear-gradient(to bottom, #4d4c4c, #4b12a8);
     padding: 5px 10px;
     margin: 10px 50px ;
     border-radius: 5px;
@@ -379,7 +379,7 @@ header .home:hover{
 }
 .oferta .width-max a:hover, button:hover{
     box-shadow: 0 0 5px 2px #4d4c4c;
-
+   
 }
 
 .manaus:hover, .sao-paulo:hover, .rio-de-janeiro:hover, .maranhao:hover {
@@ -614,13 +614,14 @@ header .home:hover{
     color: #fff;
 }
 .cruzeiro_galeria_2 .form-cruzeiro form  input, .cruzeiro_galeria_2 .form-cruzeiro form textarea{
-    padding: 2px 0;
+    padding: 3px 3px;
     border-radius: 3px;
     border: 1px solid #717170;
     margin-bottom: 5px;
     background-color: #5c13d263;
     
 }
+
 .cruzeiro_galeria_2 .form-cruzeiro form button{
     margin: 10px 20px;
 }
