@@ -4,7 +4,7 @@ Agência de viagens é uma Website criado com as tecnologias HTML e CSS, que des
 
 <img src="https://github.com/Danilo-TTeles/Agencia_de_viagem/blob/main/src/img/Captura%20de%20tela%202023-08-22%20162650.png">
 
-Cm-Life conta com:
+Cm-Life conta com:<br>
 -Navegações facéis para todas as áreas do site.<br>
 -Uso background linear para dar efeitos gradrient ao menu entre outros.<br>
 -Responsivo para vários tipos de telas.<br>
